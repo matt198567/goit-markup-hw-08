@@ -1,0 +1,39 @@
+.activity {
+    padding-top: 0;
+    @media screen and (max-width: 1199px) {
+        display: none;
+    }
+}
+.section-title-two {
+    letter-spacing: 0.03em;
+    font-weight: bold;
+    color: var(--title-text-color);
+    font-size: 36px;
+    line-height: 1.2;
+    text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.images-ul {
+    display: flex;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.image {
+    margin-right: 30px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background: rgba(47, 48, 58, 0.8);
+}
+
+.image:nth-child(3n) {
+    margin-right: 0;
+}

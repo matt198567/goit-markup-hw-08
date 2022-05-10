@@ -1,0 +1,32 @@
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+}
+:root {
+    --primary-text-color: #2f303a;
+    --title-text-color: #212121;
+    --accent-color: #2196f3;
+    --complementary-color: #ffffff;
+    --complementary-text: #757575;
+    --animation-time: cubic-bezier(0.4, 0, 0.2, 1);
+}
+a {
+    text-decoration: none;
+    color: var(--title-text-color);
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

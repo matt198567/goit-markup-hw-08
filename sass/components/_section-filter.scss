@@ -1,0 +1,55 @@
+/* Стили для portfolio.html */
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.btn-list:not(:last-child) {
+    margin-right: 8px;
+}
+
+.pointer {
+    color: var(--title-text-color);
+    background-color: #f5f4fa;
+    cursor: pointer;
+    font-weight: 500;
+    border: transparent;
+    border-radius: 4px;
+
+    padding: 6px 22px;
+    min-width: 73px;
+    min-height: 38px;
+
+    transition: background-color 250ms var(--animation-time),
+        color 250ms var(--animation-time),
+        box-shadow 250ms var(--animation-time);
+        &:hover,
+        &:focus {
+            color: var(--complementary-color);
+            background-color: var(--accent-color);
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+                0px 1px 2px rgba(0, 0, 0, 0.08),
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+        }
+}
+
+.oll {
+    color: var(--complementary-color);
+    background-color: var(--accent-color);
+}
+
