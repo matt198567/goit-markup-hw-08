@@ -15,8 +15,6 @@
     letter-spacing: 0.03em;
     color: var(--complementary-color);
     font-size: 26px;
-
-    // display: inline-block;
 }
 
 .address {
@@ -46,21 +44,20 @@
 }
 
 .container-footer {
-    @media screen and (max-width:767) {
-        // display: inline-block;
-    }
     @media screen and (min-width:768px) {
         display: flex;
-        justify-content: center;
         align-items: baseline;
         flex-wrap: wrap;
-        
+        padding-left: 76px;
+        padding-right: 89px;
     }
     
     @media screen and (min-width:1200px) {
         display: flex;
         align-items: baseline;
         margin: 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
 
@@ -68,8 +65,14 @@
     @media screen and (max-width:767px) {
         text-align: center;
     }
-    @media screen and (min-width:1200px) {
+    @media screen and (min-width:768px) {
         flex-grow: 1;
+        text-align: center;
+        margin-right: 165px;
+    }
+    @media screen and (min-width:1200px) {
+        text-align: start;
+        margin-right: 0;
     }
 }
 
@@ -81,7 +84,6 @@
     @media screen and(min-width:1200px) {
         margin-left: 70px;
     }
-    
 }
 
 .footer-title {
@@ -93,6 +95,9 @@
     text-transform: uppercase;
 
     margin-bottom: 20px;
+    @media screen and (min-width:768px) {
+        text-align: center;
+    }
 }
 
 .footer-networks {
@@ -131,20 +136,25 @@
     text-transform: uppercase;
 
     margin-bottom: 20px;
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1199px) {
         margin-top: 60px;
     }
 }
 
 .footer-newsletter {
     @media screen and (max-width:767px) {
-        
-        display: block;
         text-align: center;
+    }
+   
+    @media screen and (min-width:768px) {
+       text-align: center;
+       margin-left: 90px;
     }
     @media screen and (min-width:1200px) {
         margin-left: 93px;
+        text-align: start;
     }
+    
 }
 
 .footer-email input {
@@ -157,9 +167,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     height: 50px;
-    width: 358px;
+    width: 450px;
 
     padding: 15px 16px;
+    @media screen and (min-width:1200px) {
+        width: 358px;
+    }
 }
 
 .footer-form {
@@ -186,9 +199,9 @@
     justify-content: center;
     
     padding: 0;
-    @media screen and (max-width:767px) {
+    @media screen and (max-width:1199px) {
         margin-top: 20px;
-        
+        display: inline-flex;
         
     }
     @media screen and (min-width:1200px) {
