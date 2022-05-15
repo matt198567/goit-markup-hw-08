@@ -4,10 +4,19 @@
     padding-top: 200px;
     padding-bottom: 200px;
 
-    max-width: 1600px;
+    width: 480px;
     height: 600px;
     margin-left: auto;
     margin-right: auto;
+    @media screen and (max-width:480px) {
+        width: 480px;
+    }
+    @media screen and (min-width:768px) {
+        width: 100%;
+    }
+    @media screen and (min-width:1200px) {
+        width: 100%;
+    }
     
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)), url(../img/hero/mobail.jpg);

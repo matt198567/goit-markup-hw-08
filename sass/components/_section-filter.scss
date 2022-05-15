@@ -14,6 +14,10 @@
 }
 
 .btn {
+    @media screen and (max-width:480px) {
+        flex-wrap: wrap;
+        justify-content: start;
+    }
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
@@ -22,8 +26,21 @@
 .btn-list:not(:last-child) {
     margin-right: 8px;
 }
+.btn-list {
+    @media screen and (max-width:480px) {
+        margin-top: 0;
+        &:nth-child(n+4) {
+            margin-top: 15px;
+        }
+        &:nth-child(3n) {
+        margin-right: 0;
+        }
+    }
+}
 
 .pointer {
+     
+
     color: var(--title-text-color);
     background-color: #f5f4fa;
     cursor: pointer;
@@ -52,4 +69,3 @@
     color: var(--complementary-color);
     background-color: var(--accent-color);
 }
-

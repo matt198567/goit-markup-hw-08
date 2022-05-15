@@ -1,6 +1,10 @@
 /* Модальное окно */
 
 .backdrop {
+    @media screen and (max-width:480px) {
+        width: 450px;
+        top: 25%;
+    }
     position: fixed;
     top: 0;
     left: 0;
@@ -23,6 +27,10 @@
     min-width: 528px;
     min-height: 582px;
     background-color: var(--complementary-color);
+    @media screen and (max-width:480px) {
+        width: 450px;
+        top: 25%;
+    }
 
     position: absolute;
     top: 50%;
