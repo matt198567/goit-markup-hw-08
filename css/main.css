@@ -153,106 +153,255 @@ nav {
   fill: currentColor;
 }
 
-.mob {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
-  overflow: auto;
+@media screen and (max-width: 767px) {
+  .mob {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    overflow: auto;
+  }
 }
 
-.menu-open-btn, .menu-close-btn {
-  background-color: transparent;
-  border: none;
-  display: block;
-  margin-left: auto;
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob {
+    display: none;
+  }
 }
 
-.menu-close-btn {
-  margin-bottom: 8px;
+@media screen and (max-width: 767px) {
+  .menu-open-btn, .menu-close-btn {
+    background-color: transparent;
+    border: none;
+    display: block;
+    margin-left: auto;
+  }
 }
 
-.open-icon:hover {
-  cursor: pointer;
-  fill: var(--accent-color);
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .menu-open-btn, .menu-close-btn {
+    display: none;
+  }
 }
 
-.close-icon:hover {
-  cursor: pointer;
-  fill: var(--accent-color);
+@media screen and (max-width: 767px) {
+  .menu-close-btn {
+    margin-bottom: 8px;
+  }
 }
 
-.mob-menu {
-  position: fixed;
-  top: 0;
-  background-color: var(--complementary-color);
-  height: 100%;
-  width: 100%;
-  z-index: 5;
-  padding-top: 48px;
-  padding-bottom: 48px;
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .menu-close-btn {
+    display: none;
+  }
 }
 
-.mob-item:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (max-width: 767px) {
+  .open-icon:hover {
+    cursor: pointer;
+    fill: var(--accent-color);
+  }
 }
 
-.mob-contact-item:not(:last-child) {
-  margin-bottom: 32px;
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .open-icon:hover {
+    display: none;
+  }
 }
 
-.mob-link {
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.175;
-  letter-spacing: 0.02em;
+@media screen and (max-width: 767px) {
+  .close-icon:hover {
+    cursor: pointer;
+    fill: var(--accent-color);
+  }
 }
 
-.mob-link:hover {
-  color: var(--accent-color);
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .close-icon:hover {
+    display: none;
+  }
 }
 
-.contacts-list {
-  margin-top: 306px;
-  margin-bottom: 64px;
+@media screen and (max-width: 767px) {
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    background-color: var(--complementary-color);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
-.mob-tel-link {
-  font-weight: 500;
-  font-size: 34px;
-  line-height: 1.176;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
-.mob-mail-link {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.166;
-  letter-spacing: 0.02em;
-  color: #757575;
+@media screen and (max-width: 767px) {
+  .mob-menu {
+    position: fixed;
+    top: 0;
+    background-color: var(--complementary-color);
+    height: 100%;
+    width: 100%;
+    z-index: 5;
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
 }
 
-.social-networks-list {
-  display: flex;
-  justify-content: start;
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob-menu {
+    display: none;
+  }
 }
 
-.social-network-item:not(:first-child) {
-  margin-left: 10px;
+@media screen and (max-width: 767px) {
+  .mob-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
 }
 
-.social-network-item:not(:last-child) {
-  border-right: 1px solid rgba(33, 33, 33, 0.2);
-  padding-right: 10px;
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob-item:not(:last-child) {
+    display: none;
+  }
 }
 
-.social-network-link {
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.2;
-  letter-spacing: 0.02em;
-  color: var(--accent-color);
+@media screen and (max-width: 767px) {
+  .mob-contact-item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob-contact-item:not(:last-child) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mob-link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.175;
+    letter-spacing: 0.02em;
+  }
+  .mob-link:hover {
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts-list {
+    margin-top: 306px;
+    margin-bottom: 64px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .contacts-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mob-tel-link {
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.176;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob-tel-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mob-mail-link {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.166;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .mob-mail-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-networks-list {
+    display: flex;
+    justify-content: start;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .social-networks-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-network-item:not(:first-child) {
+    margin-left: 10px;
+  }
+  .social-network-item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .social-network-item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .social-network-link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--accent-color);
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .social-network-link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .no-scroll {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 767px) and (min-width: 768px) {
+  .no-scroll {
+    display: none;
+  }
 }
 
 html {
