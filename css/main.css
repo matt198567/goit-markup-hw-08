@@ -1059,6 +1059,13 @@ img {
   transform: translateY(0);
 }
 
+@media screen and (max-width: 480px) {
+  .image-portfolio {
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .images-portfolio {
     display: flex;
@@ -1068,9 +1075,10 @@ img {
   .image-portfolio {
     width: calc(100% / 2 - 30px);
     margin-right: 30px;
+    margin-bottom: 30px;
   }
-  .image-portfolio:nth-child(2n) {
-    margin-right: 0;
+  .portfolio-filter {
+    padding: 20px 24px 56px 24px;
   }
 }
 
@@ -1085,12 +1093,16 @@ img {
     margin-right: 30px;
     display: flex;
     flex-wrap: wrap;
+    width: calc(100% / 3 - 30px);
   }
   .image-portfolio:nth-child(3n) {
     margin-right: 0;
   }
   .image-portfolio:nth-child(1n+7) {
     margin-bottom: 0;
+  }
+  .portfolio-filter {
+    padding: 20px 24px 20px 24px;
   }
 }
 
@@ -1109,7 +1121,6 @@ img {
 }
 
 .portfolio-filter {
-  padding: 20px 24px 20px 24px;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
