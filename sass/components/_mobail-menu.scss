@@ -14,7 +14,7 @@
         display: block;
         margin-left: auto;
     }
-    
+
     .menu-close-btn {
         margin-top: 8px;
     }
@@ -30,10 +30,19 @@
     }
     
     .mob-menu {
+        &.is-open {
+            opacity: 1;
+            transform: translateX(0);
+        }
         &.is-hidden {
             opacity: 0;
             pointer-events: none;
         }
+        opacity: 0;
+        transform-origin: right;
+        transform: translateX(100%);
+        transition: transform 500ms var(--animation-time), opacity 500ms var(--animation-time);
+        
         position: fixed;
         top: 0;
         background-color: var(--complementary-color);
