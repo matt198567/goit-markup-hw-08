@@ -14,33 +14,39 @@
 }
 
 .btn {
-    @media screen and (max-width:480px) {
-        flex-wrap: wrap;
-        justify-content: start;
-    }
     display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    margin-bottom: 40px;
+    @media screen and (min-width:768px) {
     justify-content: center;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    }
 }
 
 .btn-list:not(:last-child) {
     margin-right: 8px;
 }
+
 .btn-list {
-    @media screen and (max-width:480px) {
-        margin-top: 0;
+    margin-top: 0;
+    &:nth-child(n+4) {
+        margin-top: 15px;
+    }
+    &:nth-child(3n) {
+    margin-right: 0;
+    }
+    @media screen and (min-width:768px) {
         &:nth-child(n+4) {
-            margin-top: 15px;
-        }
-        &:nth-child(3n) {
-        margin-right: 0;
-        }
+        margin-top: 0;
+    }
+    &:nth-child(3n) {
+        margin-right: 8px;
+    }
     }
 }
 
 .pointer {
-     
-
     color: var(--title-text-color);
     background-color: #f5f4fa;
     cursor: pointer;

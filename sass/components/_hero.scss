@@ -1,15 +1,17 @@
 .hero {
     background-color: var(--primary-text-color);
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-    width: 480px;
-    height: 600px;
+    padding-top: 118px;
+    padding-bottom: 118px;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (max-width:480px) {
-        width: 480px;
+    
+    @media screen and (min-width:1200px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    }
+    @media screen and (min-width:320px) {
+        width: fit-content;
     }
     @media screen and (min-width:768px) {
         width: 100%;
