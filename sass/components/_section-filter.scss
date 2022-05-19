@@ -55,8 +55,15 @@
     border-radius: 4px;
 
     padding: 6px 22px;
-    min-width: 73px;
+    
     min-height: 38px;
+    @media screen and (max-width:479px) {
+        width: 100%; 
+    }
+
+    @media screen and (min-width:480px) {
+        min-width: 73px;
+    }
 
     transition: background-color 250ms var(--animation-time),
         color 250ms var(--animation-time),

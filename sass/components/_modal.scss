@@ -1,10 +1,6 @@
 /* Модальное окно */
 
 .backdrop {
-    @media screen and (max-width:480px) {
-        width: 450px;
-        top: 25%;
-    }
     position: fixed;
     top: 0;
     left: 0;
@@ -24,12 +20,15 @@
 }
 
 .modal {
-    min-width: 528px;
+    max-width: 450px;
     min-height: 582px;
     background-color: var(--complementary-color);
-    @media screen and (max-width:480px) {
-        width: 450px;
-        top: 25%;
+    
+    @media screen and (max-width:767px) {
+        width: 100%;
+    }
+    @media screen and (min-width:768px) {
+        min-width: 528px;
     }
 
     position: absolute;
@@ -179,8 +178,14 @@
     justify-content: center;
 
     font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+
+    @media screen and (min-width:1200px) {
     font-size: 14px;
     line-height: 1.7;
+    }
+    
     letter-spacing: 0.01em;
     color: #757575;
     svg {
