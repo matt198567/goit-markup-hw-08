@@ -1,3 +1,7 @@
+.team {
+    background-color: #F5F4FA;
+}
+
 .section-title-two {
     letter-spacing: 0.03em;
     font-weight: bold;
@@ -16,6 +20,7 @@
 }
 
 .images {
+    
     @media screen and (min-width: 768px) {
         display: flex;
         flex-wrap: wrap;

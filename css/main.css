@@ -483,6 +483,10 @@ img {
   justify-content: center;
 }
 
+.team {
+  background-color: #F5F4FA;
+}
+
 .section-title-two {
   letter-spacing: 0.03em;
   font-weight: bold;
