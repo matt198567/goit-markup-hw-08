@@ -1109,6 +1109,12 @@ img {
   left: 0;
 }
 
+@media screen and (max-width: 380px) {
+  .card-dropdown-text {
+    overflow-y: scroll;
+  }
+}
+
 .card-link:hover .card-dropdown-text,
 .card-link:focus .card-dropdown-text {
   transform: translateY(0);
@@ -1229,13 +1235,13 @@ img {
   transition: transform 250ms var(--animation-time);
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1199px) {
   .modal {
     width: 100%;
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .modal {
     min-width: 528px;
   }

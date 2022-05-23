@@ -16,6 +16,10 @@
 }
 
 .card-dropdown-text {
+    @media screen and (max-width:380px) {
+        overflow-y: scroll;
+    }
+    
     font-weight: 400;
     font-size: 18px;
     line-height: 1.6;
